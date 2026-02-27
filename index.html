@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Maison Noir — An exclusive collection of artisan chocolates crafted with rare single-origin cacao. Where heritage meets indulgence.">
+    <title>Keel Choconut Factory</title>
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!-- Grain Overlay -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="main-nav">
+        <div class="nav__inner">
+            <a href="#" class="nav__logo" id="nav-logo"><img src="assets/logo.jpg" alt="Keel Choconut Factory"
+                    class="nav__logo-img"></a>
+            <div class="nav__right">
+                <ul class="nav__links">
+                    <li><a href="#collection" class="nav__link" id="nav-collection">Collection</a></li>
+                    <li><a href="#vision" class="nav__link" id="nav-vision">Vision</a></li>
+                    <li><a href="#contact" class="nav__link" id="nav-contact">Contact</a></li>
+                </ul>
+                <a href="https://wa.me/971506043543" target="_blank" rel="noopener noreferrer" class="nav__order-btn"
+                    id="nav-order">Order</a>
+                <button class="nav__menu-btn" id="nav-menu-btn" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-menu__links">
+            <li><a href="#collection" class="mobile-menu__link">Collection</a></li>
+            <li><a href="#vision" class="mobile-menu__link">Vision</a></li>
+            <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+            <li><a href="https://wa.me/971506043543" target="_blank" rel="noopener noreferrer"
+                    class="mobile-menu__link mobile-menu__order">Order</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- ====== HERO SECTION ====== -->
+    <section class="hero-scroll-container" id="hero">
+        <div class="hero-sticky">
+            <canvas id="hero-canvas"></canvas>
+            <div class="hero-tagline" id="hero-tagline">
+                <div class="hero-tagline__ornament hero-tagline__ornament--top">
+                    <span></span>
+                </div>
+                <p class="hero-tagline__line hero-tagline__line--1">Where tradition</p>
+                <p class="hero-tagline__line hero-tagline__line--2">meets <em>indulgence</em></p>
+                <div class="hero-tagline__ornament hero-tagline__ornament--bottom">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ====== PRODUCT COLLECTION SECTION ====== -->
+    <section class="collection" id="collection">
+        <div class="collection__container">
+
+            <div class="collection__header reveal-group">
+                <span class="section-label reveal-item">The Collection</span>
+                <h2 class="collection__headline reveal-item">
+                    Each piece, a <em>masterwork</em>
+                </h2>
+            </div>
+
+            <div class="collection__grid">
+
+                <!-- Product 1 -->
+                <article class="product-card reveal-product" id="product-signature" data-product="signature">
+                    <div class="product-card__image-wrap">
+                        <img src="assets/signature1.jpeg" alt="Signature Collection" class="product-card__image">
+                        <div class="product-card__shine"></div>
+                    </div>
+                    <div class="product-card__info">
+                        <h3 class="product-card__name">Signature Collection</h3>
+                        <p class="product-card__desc">Our Finest Artisan Selection</p>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card reveal-product" id="product-kunafa" data-product="kunafa">
+                    <div class="product-card__image-wrap">
+                        <img src="assets/kunafa.jpeg" alt="Kunafa" class="product-card__image">
+                        <div class="product-card__shine"></div>
+                    </div>
+                    <div class="product-card__info">
+                        <h3 class="product-card__name">Kunafa Chocolates</h3>
+                        <p class="product-card__desc">Traditional Delicacy · Reimagined</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PRODUCT VARIANTS MODAL ====== -->
+    <div class="variants-modal" id="variants-modal" aria-hidden="true">
+        <div class="variants-modal__backdrop" id="variants-modal-backdrop"></div>
+        <div class="variants-modal__panel">
+            <button class="variants-modal__close" id="variants-modal-close" aria-label="Close">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                </svg>
+            </button>
+            <div class="variants-modal__header">
+                <span class="section-label">Variants</span>
+                <h3 class="variants-modal__title" id="variants-modal-title"></h3>
+            </div>
+            <div class="variants-modal__grid" id="variants-modal-grid"></div>
+        </div>
+    </div>
+
+    <!-- ====== VISION SECTION ====== -->
+    <section class="process" id="vision">
+        <div class="process__container">
+
+            <div class="process__header reveal-group">
+                <span class="section-label reveal-item">Our Vision</span>
+                <h2 class="process__headline reveal-item">
+                    Crafting moments of <em>joy</em>
+                </h2>
+            </div>
+
+            <div class="process__steps">
+
+                <div class="process__step reveal-group" id="vision-1">
+                    <div class="process__step-icon reveal-item">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1">
+                            <path
+                                d="M32 8 C20 8, 10 18, 10 28 C10 42, 32 56, 32 56 C32 56, 54 42, 54 28 C54 18, 44 8, 32 8Z" />
+                            <path d="M32 18 C26 18, 20 23, 20 28 C20 36, 32 46, 32 46" />
+                        </svg>
+                    </div>
+                    <span class="process__step-num reveal-item">I</span>
+                    <h3 class="process__step-title reveal-item">Heritage</h3>
+                    <p class="process__step-text reveal-item">
+                        We honour time-tested traditions, blending heritage recipes with the finest ingredients to
+                        create chocolates that tell a story.
+                    </p>
+                    <div class="process__step-line"></div>
+                </div>
+
+                <div class="process__step reveal-group" id="vision-2">
+                    <div class="process__step-icon reveal-item">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1">
+                            <polygon points="32,6 38,24 56,24 42,36 46,54 32,44 18,54 22,36 8,24 26,24" />
+                        </svg>
+                    </div>
+                    <span class="process__step-num reveal-item">II</span>
+                    <h3 class="process__step-title reveal-item">Excellence</h3>
+                    <p class="process__step-text reveal-item">
+                        Every creation is held to an uncompromising standard. We believe indulgence should never come at
+                        the cost of quality.
+                    </p>
+                    <div class="process__step-line"></div>
+                </div>
+
+                <div class="process__step reveal-group" id="vision-3">
+                    <div class="process__step-icon reveal-item">
+                        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1">
+                            <circle cx="32" cy="24" r="10" />
+                            <circle cx="18" cy="40" r="8" />
+                            <circle cx="46" cy="40" r="8" />
+                            <line x1="26" y1="31" x2="22" y2="34" />
+                            <line x1="38" y1="31" x2="42" y2="34" />
+                        </svg>
+                    </div>
+                    <span class="process__step-num reveal-item">III</span>
+                    <h3 class="process__step-title reveal-item">Community</h3>
+                    <p class="process__step-text reveal-item">
+                        Chocolate brings people together. We aspire to create shared moments of sweetness that forge
+                        lasting connections.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CONTACT SECTION ====== -->
+    <section class="contact" id="contact">
+        <div class="contact__container">
+
+            <div class="contact__header reveal-group">
+                <span class="section-label reveal-item">Get in Touch</span>
+                <h2 class="contact__headline reveal-item">
+                    We'd love to <em>hear</em> from you
+                </h2>
+            </div>
+
+            <div class="contact__content">
+
+                <div class="contact__info reveal-group">
+                    <div class="contact__info-item reveal-item">
+                        <div class="contact__info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <circle cx="12" cy="12" r="5" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="contact__info-label">Instagram</h4>
+                            <a href="https://www.instagram.com/keel_choconut_factory?igsh=MWJ2bWMxMjUzN3EwNA%3D%3D&utm_source=qr"
+                                target="_blank" rel="noopener noreferrer"
+                                class="contact__info-value">@keel_choconut_factory</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__info-item reveal-item">
+                        <div class="contact__info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="contact__info-label">Phone</h4>
+                            <a href="tel:+971506043543" class="contact__info-value">+971 50 604 3543</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__info-item reveal-item">
+                        <div class="contact__info-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="contact__info-label">Visit Us</h4>
+                            <p class="contact__info-value">Dubai, Al Qusais<br>United Arab Emirates</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <a href="#" class="footer__logo" id="footer-logo"><img src="assets/logo.jpg" alt="Keel Choconut Factory"
+                        class="footer__logo-img"></a>
+                <p class="footer__tagline">Artisan Chocolatier</p>
+            </div>
+            <div class="footer__links">
+
+                <a href="#collection" class="footer__link" id="footer-collection">Collection</a>
+                <a href="#vision" class="footer__link" id="footer-vision">Vision</a>
+                <a href="#contact" class="footer__link" id="footer-contact">Contact</a>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2026 Keel Choconut Factory. All rights reserved.</p>
+                <p class="footer__note">Crafted with devotion in Dubai, UAE</p>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="script.js"></script>
+</body>
+
+</html>
