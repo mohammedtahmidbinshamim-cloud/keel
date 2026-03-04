@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Maison Noir — An exclusive collection of artisan chocolates crafted with rare single-origin cacao. Where heritage meets indulgence.">
+        content="Keel Choconut Factory — Handcrafted chocolates and kunafa confections born from heritage recipes. Artisan chocolatier in Dubai, UAE.">
     <title>Keel Choconut Factory</title>
     <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
 
@@ -16,7 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=10">
 
 
 </head>
@@ -32,7 +32,7 @@
     <!-- Navigation -->
     <nav class="nav" id="main-nav">
         <div class="nav__inner">
-            <a href="#" class="nav__logo" id="nav-logo"><img src="assets/logo.jpg" alt="Keel Choconut Factory"
+            <a href="#" class="nav__logo" id="nav-logo"><img src="assets/logobg.png" alt="Keel Choconut Factory"
                     class="nav__logo-img"></a>
             <div class="nav__right">
                 <ul class="nav__links">
@@ -62,23 +62,53 @@
     </div>
 
 
-
     <!-- ====== HERO SECTION ====== -->
-    <section class="hero-scroll-container" id="hero">
-        <div class="hero-sticky">
-            <canvas id="hero-canvas"></canvas>
-            <div class="hero-tagline" id="hero-tagline">
-                <div class="hero-tagline__ornament hero-tagline__ornament--top">
+    <section class="hero" id="hero">
+        <div id="hero-silk" class="silk-container"></div>
+        <div class="hero__container">
+            <div class="hero__content">
+                <span class="hero__label">Artisan Chocolatier · Dubai</span>
+                <h1 class="hero__title">
+                    Crafted with <em>passion,</em><br>
+                    savoured with <em>love</em>
+                </h1>
+                <div class="hero__ornament">
                     <span></span>
                 </div>
-                <p class="hero-tagline__line hero-tagline__line--1">Where tradition</p>
-                <p class="hero-tagline__line hero-tagline__line--2">meets <em>indulgence</em></p>
-                <div class="hero-tagline__ornament hero-tagline__ornament--bottom">
-                    <span></span>
+                <p class="hero__subtitle">
+                    Handcrafted chocolates & kunafa confections born from heritage recipes and the finest ingredients.
+                </p>
+                <a href="https://wa.me/971506043543" target="_blank" rel="noopener noreferrer" class="hero__cta"
+                    id="hero-cta">
+                    Order Now
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+            <div class="hero__gallery">
+                <div class="hero__gallery-item hero__gallery-item--1">
+                    <img src="assets/mangokunafabg.png" alt="Mango Kunafa" class="hero__gallery-img">
+                </div>
+                <div class="hero__gallery-item hero__gallery-item--2">
+                    <img src="assets/lotuskunafabg.png" alt="Lotus Kunafa" class="hero__gallery-img">
+                </div>
+                <div class="hero__gallery-item hero__gallery-item--3">
+                    <img src="assets/kunafabg.png" alt="Classic Kunafa" class="hero__gallery-img">
+                </div>
+                <div class="hero__gallery-item hero__gallery-item--4">
+                    <img src="assets/nutellakunafabg.png" alt="Nutella Kunafa" class="hero__gallery-img">
+                </div>
+                <div class="hero__gallery-item hero__gallery-item--5">
+                    <img src="assets/cckunafabg.png" alt="Cotton Candy Kunafa" class="hero__gallery-img">
+                </div>
+                <div class="hero__gallery-item hero__gallery-item--6">
+                    <img src="assets/oreokunafabg.png" alt="Oreo Kunafa" class="hero__gallery-img">
                 </div>
             </div>
         </div>
     </section>
+
 
 
     <!-- ====== PRODUCT COLLECTION SECTION ====== -->
@@ -92,53 +122,96 @@
                 </h2>
             </div>
 
-            <div class="collection__grid">
+            <div class="collection__list">
 
-                <!-- Product 1 -->
-                <article class="product-card reveal-product" id="product-signature" data-product="signature">
-                    <div class="product-card__image-wrap">
-                        <img src="assets/signature1.jpeg" alt="Signature Collection" class="product-card__image">
-                        <div class="product-card__shine"></div>
+                <!-- Product 1: Signature Collection -->
+                <div class="product-group reveal-product" id="product-signature">
+                    <div class="product-group__header">
+                        <h3 class="product-group__name">Signature Collection</h3>
+                        <p class="product-group__desc">Our Finest Artisan Selection</p>
                     </div>
-                    <div class="product-card__info">
-                        <h3 class="product-card__name">Signature Collection</h3>
-                        <p class="product-card__desc">Our Finest Artisan Selection</p>
+                    <div class="product-group__variants-grid">
+                        <div class="variant-card">
+                            <div class="variant-card__image-wrap">
+                                <img src="assets/signature1.jpeg" alt="Signature Classic" class="variant-card__image">
+                                <div class="variant-card__shine"></div>
+                            </div>
+                            <p class="variant-card__name">Signature Classic</p>
+                        </div>
+                        <div class="variant-card">
+                            <div class="variant-card__image-wrap">
+                                <img src="assets/signature2.jpeg" alt="Signature Hazelnut" class="variant-card__image">
+                                <div class="variant-card__shine"></div>
+                            </div>
+                            <p class="variant-card__name">Signature Hazelnut</p>
+                        </div>
+                        <div class="variant-card">
+                            <div class="variant-card__image-wrap">
+                                <img src="assets/signature3.jpeg" alt="Signature Mango" class="variant-card__image">
+                                <div class="variant-card__shine"></div>
+                            </div>
+                            <p class="variant-card__name">Signature Mango</p>
+                        </div>
                     </div>
-                </article>
+                </div>
 
-                <!-- Product 2 -->
-                <article class="product-card reveal-product" id="product-kunafa" data-product="kunafa">
-                    <div class="product-card__image-wrap">
-                        <img src="assets/kunafa.jpeg" alt="Kunafa" class="product-card__image">
-                        <div class="product-card__shine"></div>
+                <!-- Product 2: Kunafa Chocolates -->
+                <div class="product-group reveal-product" id="product-kunafa">
+                    <div class="product-group__header">
+                        <h3 class="product-group__name">Kunafa Chocolates</h3>
+                        <p class="product-group__desc">Traditional Delicacy · Reimagined</p>
                     </div>
-                    <div class="product-card__info">
-                        <h3 class="product-card__name">Kunafa Chocolates</h3>
-                        <p class="product-card__desc">Traditional Delicacy · Reimagined</p>
+                    <div class="product-group__variants-grid">
+                        <div class="variant-card">
+                            <div class="variant-card__image-wrap">
+                                <img src="assets/kunafa.jpeg" alt="Original" class="variant-card__image">
+                                <div class="variant-card__shine"></div>
+                            </div>
+                            <p class="variant-card__name">Original</p>
+                        </div>
+                        <div class="variant-card">
+                            <div class="variant-card__image-wrap">
+                                <img src="assets/cottoncandykunafa.jpeg" alt="Cotton Candy" class="variant-card__image">
+                                <div class="variant-card__shine"></div>
+                            </div>
+                            <p class="variant-card__name">Cotton Candy</p>
+                        </div>
+                        <div class="variant-card">
+                            <div class="variant-card__image-wrap">
+                                <img src="assets/lotuskunafa.png" alt="Lotus" class="variant-card__image">
+                                <div class="variant-card__shine"></div>
+                            </div>
+                            <p class="variant-card__name">Lotus</p>
+                        </div>
+                        <div class="variant-card">
+                            <div class="variant-card__image-wrap">
+                                <img src="assets/mangokunafa.png" alt="Mango" class="variant-card__image">
+                                <div class="variant-card__shine"></div>
+                            </div>
+                            <p class="variant-card__name">Mango</p>
+                        </div>
+                        <div class="variant-card">
+                            <div class="variant-card__image-wrap">
+                                <img src="assets/nutellakunafa.png" alt="Nutella" class="variant-card__image">
+                                <div class="variant-card__shine"></div>
+                            </div>
+                            <p class="variant-card__name">Nutella</p>
+                        </div>
+                        <div class="variant-card">
+                            <div class="variant-card__image-wrap">
+                                <img src="assets/oreokunafa.png" alt="Oreo" class="variant-card__image">
+                                <div class="variant-card__shine"></div>
+                            </div>
+                            <p class="variant-card__name">Oreo</p>
+                        </div>
                     </div>
-                </article>
+                </div>
 
             </div>
         </div>
     </section>
 
-    <!-- ====== PRODUCT VARIANTS MODAL ====== -->
-    <div class="variants-modal" id="variants-modal" aria-hidden="true">
-        <div class="variants-modal__backdrop" id="variants-modal-backdrop"></div>
-        <div class="variants-modal__panel">
-            <button class="variants-modal__close" id="variants-modal-close" aria-label="Close">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                    <line x1="6" y1="6" x2="18" y2="18" />
-                    <line x1="18" y1="6" x2="6" y2="18" />
-                </svg>
-            </button>
-            <div class="variants-modal__header">
-                <span class="section-label">Variants</span>
-                <h3 class="variants-modal__title" id="variants-modal-title"></h3>
-            </div>
-            <div class="variants-modal__grid" id="variants-modal-grid"></div>
-        </div>
-    </div>
+
 
     <!-- ====== VISION SECTION ====== -->
     <section class="process" id="vision">
@@ -285,11 +358,25 @@
             <div class="footer__bottom">
                 <p class="footer__copy">&copy; 2026 Keel Choconut Factory. All rights reserved.</p>
                 <p class="footer__note">Crafted with devotion in Dubai, UAE</p>
+                <a href="https://www.instagram.com/intellex.web?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank" rel="noopener noreferrer" class="footer__dev-link">
+                    Meet the developers
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        class="footer__dev-icon">
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <circle cx="12" cy="12" r="5" />
+                        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none" />
+                    </svg>
+                </a>
             </div>
         </div>
     </footer>
 
     <script defer src="script.js"></script>
+    <script type="module">
+        import { initSilk } from './silk.js';
+        initSilk('#hero-silk');
+    </script>
 </body>
 
 </html>
